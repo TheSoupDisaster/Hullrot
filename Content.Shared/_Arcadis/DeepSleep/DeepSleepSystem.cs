@@ -17,32 +17,51 @@ namespace Content.Shared._Arcadis.DeepSleep;
 public sealed class DeepSleepSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly ILogManager _logMan = default!;
+    [Dependency] private readonly INetManager _netMan = default!;
+
+    private ISawmill _sawmill = default!;
     public override void Initialize()
     {
         base.Initialize();
 
         // SubscribeLocalEvent<DeepSleepSleepingComponent, ExaminedEvent>(OnDeepSleepAction);
         // SubscribeLocalEvent()
+
+        _sawmill = _logMan.GetSawmill("snooze");
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        foreach (var comp in EntityManager.EntityQuery<DeepSleepSleepingComponent>())
-        {
-            // so sue me for using comp.Owner, whaddaya WANT me to do here???
-            if (!TryComp<DeepSleepShaderComponent>(comp.Owner, out var shadercomp))
-                EnsureComp<DeepSleepShaderComponent>(comp.Owner, out shadercomp);
+        var query = EntityQueryEnumerator<DeepSleepSleepingComponent>();
 
-            shadercomp.SleepProgression += comp.SleepProgressionSpeed;
+        if (!_timing.IsFirstTimePredicted)
+            return;
+
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            if (!TryComp<DeepSleepShaderComponent>(uid, out var shadercomp))
+                EnsureComp<DeepSleepShaderComponent>(uid, out shadercomp);
+
+            if (shadercomp.SleepProgression >= 1f)
+            {
+                shadercomp.SleepProgression = 1f;
+                continue;
+            }
+
+            _sawmill.Debug((comp.SleepProgressionSpeed / _timing.TickRate).ToString());
+
+            _sawmill.Debug(shadercomp.SleepProgression.ToString());
+
+            shadercomp.SleepProgression += (comp.SleepProgressionSpeed / _timing.TickRate);
             if (shadercomp.SleepProgression <= 0)
             {
-                RemComp<DeepSleepShaderComponent>(comp.Owner);
-                RemComp<DeepSleepSleepingComponent>(comp.Owner);
+                RemComp<DeepSleepShaderComponent>(uid);
+                RemComp<DeepSleepSleepingComponent>(uid);
             }
         }
-
-        // Tyler is going to kill me for this system if it is ever upstreamed. Count my days.
     }
 }
