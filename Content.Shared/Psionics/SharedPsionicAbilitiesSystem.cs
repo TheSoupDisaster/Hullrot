@@ -114,7 +114,7 @@ namespace Content.Shared.Abilities.Psionics
         /// </summary>
         public float ModifiedAmplification(EntityUid uid, PsionicComponent component)
         {
-            return component.CurrentAmplification * _contests.MoodContest(uid, true);
+            return component.CurrentAmplification;
         }
 
         /// <summary>
@@ -134,7 +134,7 @@ namespace Content.Shared.Abilities.Psionics
         ///     Lower mood means more Dampening, higher mood means less Dampening.
         /// </summary>
         public float ModifiedDampening(EntityUid uid, PsionicComponent component) =>
-         component.CurrentDampening / _contests.MoodContest(uid, true);
+         component.CurrentDampening;
     }
 
     public sealed class PsionicPowerUsedEvent : HandledEntityEventArgs
