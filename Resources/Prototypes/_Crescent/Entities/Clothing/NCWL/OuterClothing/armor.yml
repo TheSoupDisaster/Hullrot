@@ -2,7 +2,7 @@
   parent: [ClothingOuterStorageBase, ClothingOuterArmorBasic]
   id: ClothingOuterArmorNCWLCarapace
   name: kommissar's trenchcoat
-  description: A kevlar-intervowen durathread trenchcoat with a synthfleece-trim collar. Looks badass.
+  description: A kevlar-interwoven durathread trenchcoat with a synthfleece-trim collar. Looks badass.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/NCWL/OuterClothing/kommissarcoat.rsi
@@ -295,6 +295,30 @@
   - type: ClothingAddFaction
     faction: NCWL
 
+## mvd
+
+- type: entity
+  parent: ClothingOuterArmorNCWLCarapace
+  id: ClothingOuterArmorMVDCoat
+  name: mvd officer's trenchcoat
+  description: A kevlar-interwoven durathread trenchcoat with brass plated shoulder guards. Looks menacing.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/NCWL/OuterClothing/mvdcoat.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/NCWL/OuterClothing/mvdcoat.rsi
+
+- type: entity
+  parent: ClothingOuterArmorNCWLLogi
+  id: ClothingOuterArmorMVDJacket
+  name: mvd grunt's jacket
+  description: A kevlar-interwoven durathread jacket with a synthfleece-trim lining. Its The Jacket.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/NCWL/OuterClothing/mvdjacket.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/NCWL/OuterClothing/mvdjacket.rsi
+
 ## hardsuits ncwl revamp
 
 - type: entity
@@ -427,14 +451,14 @@
   - type: ExplosionResistance
     damageCoefficient: 0.7
   - type: DegradeableArmor
-    armorMaxHealth: 750
+    armorMaxHealth: 900
     armorType: Metallic
     armorRepair: HomelandAlloy
     initialModifiers:
       flatReductions:
         Blunt: 25
         Slash: 25
-        Piercing: 55
+        Piercing: 60
         Heat: 10
         Caustic: 25
   - type: ClothingSpeedModifier
@@ -478,6 +502,13 @@
     walkModifier: 0.7
     sprintModifier: 0.7
   - type: HeldSpeedModifier
+  - type: Reflect
+    spread: 270
+    reflectProb: 0.10
+    innate: true
+    reflects:
+      - Energy
+      - NonEnergy
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitNCWLJuggernaut
   - type: StaticPrice

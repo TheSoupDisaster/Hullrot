@@ -13,6 +13,8 @@
   requirements:
     - !type:FactionRequirement
       factionID: "DSM"
+    - !type:CharacterOverallTimeRequirement
+      min: 0
     - !type:CharacterSpeciesRequirement
       species:
         - Human
@@ -29,7 +31,7 @@
   - !type:AddComponentSpecial
     components:
       - type: ChatRank
-        rank: crescent-rank-manatarm
+        rank: crescent-rank-manatarms
       - type: HullrotFaction
         faction: DSM
       - type: LanguageAdder
@@ -59,11 +61,12 @@
     outerClothing: ClothingOuterArmorImperialTrooperArmor
     gloves: ClothingHandsGlovesImperialLonggloves
     pocket1: WeaponPistolComplianceImperial
+    pocket2: RomaineBible
     belt: ClothingBeltAssault
   storage:
     back:
-    - Flash
-    - Tourniquet
-    - Zipties
-    - MagazinePistol
-    - CombatKnife
+      - Flash
+      - Tourniquet
+      - Zipties
+      - MagazinePistol
+      - CombatKnife

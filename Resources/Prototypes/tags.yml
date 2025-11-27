@@ -1,4 +1,7 @@
 - type: Tag
+  id: MagazineSmgSmartgun
+
+- type: Tag
   id: BulletHeavyPistol
 
 - type: Tag
@@ -1081,6 +1084,9 @@
 
 - type: Tag
   id: MopBasic
+
+- type: Tag
+  id: Mothroach
 
 - type: Tag
   id: Mouse

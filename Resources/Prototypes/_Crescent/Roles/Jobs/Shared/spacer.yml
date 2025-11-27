@@ -4,9 +4,16 @@
   description: job-description-spacer
   playTimeTracker: JobSpacer
   weight: 10
-  startingGear: ContractorGear
+  startingGear: SpacerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-hire
+  requirements:
+    - !type:CharacterOverallTimeRequirement
+      min: 10800
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Voidborn
   accessGroups:
   - GeneralAccess
   special:
@@ -15,7 +22,7 @@
       - type: ChatRank
         rank: crescent-rank-ind-spacer
       - type: HullrotFaction
-        faction: INDEP
+        faction: IND
       - type: LanguageAdder
         addSpoken:
           - Tradeband
@@ -23,7 +30,7 @@
           - Tradeband
 
 - type: startingGear
-  id: ContractorGear
+  id: SpacerGear
   equipment:
     ears: ClothingHeadsetGrey
     id: SpacerPDA

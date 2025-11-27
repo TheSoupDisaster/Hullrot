@@ -17,11 +17,6 @@
       inverted: true
       species:
         - Voidborn
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
   special:
   - !type:AddComponentSpecial
     components:
@@ -49,6 +44,6 @@
     shoes: ClothingShoesBootsSalvage
     jumpsuit: ClothingUniformJumpsuitNCWLTrainee
     id: NCWLWorkerPDA
-    belt: ClothingBeltUtilityFilled
+    belt: ClothingBeltSalvageWebbingFilledNF
     back: ClothingBackpackNCWL
     ears: ClothingHeadsetNCWL

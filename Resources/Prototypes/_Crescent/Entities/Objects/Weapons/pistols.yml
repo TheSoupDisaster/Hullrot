@@ -135,9 +135,9 @@
     price: 750
 
 - type: entity
-  name: NCSP DE-7 Deagle .327
   parent: BaseWeaponPistol
   id: WeaponPistolDeagle
+  name: NCSP DE-7 Deagle .327
   description: A Desert eagle milled out of pure gold, as if a steel one wasnt heavy enough. A true sidearm of a warlord. Chambered in .327 Imperial.
   components:
   - type: Sprite
@@ -178,10 +178,19 @@
             - CartridgeMagnum
   - type: StaticPrice
     price: 1250
+  - type: Tag
+    tags:
+    - DualWield
+  - type: Multishot
+    spreadMultiplier: 1
+  - type: RequiresDualWield
+    whitelist:
+      tags:
+      - DualWield
 
 - type: entity
   parent: WeaponPistolDeagle
-  id: WeaponPistolDeagleAP
+  id: WeaponPistolDeagleUranium
   components:
   - type: ItemSlots
     slots:
@@ -312,10 +321,10 @@
     zeroVisible: true
   - type: Gun
     minAngle: 1
-    maxAngle: 19
-    angleIncrease: 6
+    maxAngle: 10
+    angleIncrease: 2
     angleDecay: 7
-    fireRate: 3
+    fireRate: 6 #on par with smgs of T2 tech. See Liberator.
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -335,11 +344,11 @@
             - MagazinePistolSmartgun
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol
+        startingItem: CartridgePistol12mm
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+            - CartridgePistolSmart
   - type: StaticPrice
     price: 3500
 
