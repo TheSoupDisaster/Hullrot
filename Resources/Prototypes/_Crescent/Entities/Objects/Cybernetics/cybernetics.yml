@@ -225,6 +225,37 @@
         - state: shinoharaoptics
 
 - type: entity
+  parent: BaseCyberneticEyes
+  id: ShinoharaOpticGun
+  name: SHI Shuriken mk.II ballistic optics
+  description: A pair of cybernetic optics that seem capable of firing 11mm rounds. A label etched into one of the eyes read, "make sure your eye is open before firing. Shinohara Industries is not responsible for any medical side-effects".
+  components:
+    - type: Sprite
+      sprite: _Crescent/Objects/Misc/cybernetics.rsi
+      layers:
+        - state: shinoharaopticgun
+    - type: Organ
+      onAdd:
+        - type: ProjectileBatteryAmmoProvider
+          proto: BulletHeavyPistol
+          fireCost: 15
+        - type: BatterySelfRecharger
+          autoRecharge: true
+          autoRechargeRate: 5
+        - type: Battery
+          maxCharge: 101
+          startingCharge: 0
+        - type: Gun
+          fireRate: 3
+          minAngle: 1
+          maxAngle: 40
+          useKey: false
+          selectedMode: FullAuto
+          availableModes:
+            - FullAuto
+          soundGunshot: /Audio/_Crescent/Weapons/Guns/smg_3/smg_gunshot_2.ogg
+
+- type: entity
   id: CyberneticsAdrenal
   parent: HullrotCyberneticBase
   name: IPM TT-86 adrenal accelerator
@@ -308,7 +339,7 @@
   - type: Sprite
     sprite: Mobs/Customization/cyberlimbs/bishop/bishop_main.rsi
     state: "iconpry"
-    
+
 - type: entity
   parent: HullrotCyberneticBase
   id: SkillshardSlot

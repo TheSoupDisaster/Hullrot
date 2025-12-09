@@ -839,6 +839,17 @@
     Steel: 750
 
 - type: latheRecipe
+  id: ShinoharaOpticGun
+  result: ShinoharaOpticGun
+  completetime: 2
+  materials:
+    Glass: 1000
+    Silver: 500
+    Gold: 500
+    BallisticCycler: 1000
+    AdvancedElectronics: 4000
+
+- type: latheRecipe
   id: GrenadeSHIHG17Smart
   result: SHIHG17SmartHandgrenade
   completetime: 2
@@ -846,4 +857,4 @@
     Plasma: 500
     Steel: 100
 
-    
+

@@ -402,6 +402,7 @@
   cost: 7500
   recipeUnlocks:
   - CyberneticsDermalArmor
+  - ShinoharaOpticGun
 
 - type: technology
   id: ShinoharaBallisticFab
