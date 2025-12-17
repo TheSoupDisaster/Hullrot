@@ -23,9 +23,9 @@
   cost: 3500
   recipeUnlocks:
   - MiningDrill
-  - BorgModuleMining
-  - MechEquipmentDrill 
+  - MechEquipmentDrill
   - ClothingMaskWeldingGas
+  - OreProcessorIndustrialMachineCircuitboard
 
 - type: technology
   id: AdvancedPowercellsMechatronics
@@ -38,7 +38,7 @@
   cost: 7500
   recipeUnlocks:
   - PowerCellHigh
-  - PowerCellMicrortg
+  #- PowerCellMicrortg
   - TurboItemRechargerCircuitboard
   - SMESAdvancedMachineCircuitboard
 
@@ -67,7 +67,6 @@
   - PortableGeneratorPacmanMachineCircuitboard
   - PortableGeneratorSuperPacmanMachineCircuitboard
   - PortableGeneratorJrPacmanMachineCircuitboard
-  - PowerComputerCircuitboard #the actual solar panel itself should be in here
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
@@ -121,7 +120,6 @@
     - PowerDrill
     - JawsOfLife
     - BorgModuleAdvancedTool
-    - BorgModuleRCD
 
 - type: technology
   id: BasicWeaponsMechatronics

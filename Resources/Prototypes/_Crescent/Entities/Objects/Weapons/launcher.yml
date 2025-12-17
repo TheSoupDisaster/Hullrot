@@ -181,7 +181,7 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: Large
+    size: Normal
     sprite: _Crescent/Objects/Weapons/Guns/m320.rsi
   - type: ItemSlots
     slots:
@@ -216,6 +216,10 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/_Crescent/Weapons/Guns/non_collection/gl_fire.ogg
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Crescent/Weapons/Interact/gun_pick.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Crescent/Weapons/Interact/gun_drop.ogg
 
 - type: entity
   name: PTA M-5 Carl Gustaf 84mm #This one is alright, not many people use rocket launchers.
@@ -305,7 +309,7 @@
 - type: entity
   name: NSCP RPG-7
   parent: [BaseWeaponLauncher, BaseGunWieldable]
-  id: WeaponLauncherRocket
+  id: C_WeaponLauncherRocket
   description: An iconic weapon of war. A rocket launcher often seen in the hands of terrorists and informal militias.
   components:
   - type: Sprite
@@ -343,7 +347,7 @@
 - type: entity
   name: PTA 10AX Chinalake 40mm #Lower mag capacity and fire rate than SHI MGL. Its more portable.
   parent: [BaseWeaponLauncher, BaseGunWieldable, StreeCredRedeemable]
-  id: WeaponLauncherChinaLake
+  id: C_WeaponLauncherChinaLake
   description: A pump action grenade launcher manufactured by Pang Tai Arms.
   components:
   - type: Sprite

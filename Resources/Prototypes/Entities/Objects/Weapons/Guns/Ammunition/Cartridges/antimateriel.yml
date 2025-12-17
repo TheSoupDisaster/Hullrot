@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseCartridge
+  parent: [ BaseCartridge, BaseMajorContraband ]
   id: CartridgeAntiMateriel
   name: cartridge (15.2×169mm)
   components:
@@ -20,6 +20,12 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 20
+  - type: EmitSoundOnLand
+    sound:
+      collection: HeavyBulletBounce
+  - type: EmitSoundOnCollide
+    sound:
+      collection: HeavyBulletBounce
 
 - type: entity
   parent: CartridgeAntiMateriel

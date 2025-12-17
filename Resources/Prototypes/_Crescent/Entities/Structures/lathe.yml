@@ -22,35 +22,8 @@
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
-    staticRecipes:
-    - SteelScrap
-    - TitaniumScrap
-    - Garbage
-    - PlasticFromGarbage1
-    - PlasticFromGarbage
-    - PlasteelFromScrapHighGrade1
-    - PlasteelFromScrapHighGrade
-    - TungstenFromScrapHighGrade1
-    - TungstenFromScrapHighGrade
-    - SteelFromScrapLowGrade1
-    - SteelFromScrapLowGrade
-    - CopperFromScrapLowGrade1
-    - CopperFromScrapLowGrade
-    - GoldFromScrapCircuit1
-    - GoldFromScrapCircuit
-    - SilverFromScrapCircuit1
-    - SilverFromScrapCircuit
-    - PlasmaFromScrapPlasma1
-    - PlasmaFromScrapPlasma
-    - PhoronFromScrapPlasma
-    - IsotopesFromScrapPlasma
-    - UraniumFromScrapUranium1
-    - UraniumFromScrapUranium
-    - FibreAlloyFromCombinedScrap
-    - BasicElectronicsFromCombinedScrap
-    - BasicMechatronicsFromCombinedScrap
-    - BallisticCyclerFromCombinedScrap
-    - HardsuitElectronicsFromCombinedScrap
+    staticPacks:
+    - C_ScrapRefinerStatic
 
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]
@@ -69,42 +42,15 @@
   - type: MaterialStorage
     dropOnDeconstruct: false #should drop ores instead of ingots/sheets
     ignoreColor: true
-    canEjectStoredMaterials: false
+    canEjectStoredMaterials: true
     whitelist:
       tags:
       - RawMaterial
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
-    staticRecipes:
-    - SteelScrap
-    - TitaniumScrap
-    - Garbage
-    - PlasticFromGarbage1
-    - PlasticFromGarbage
-    - PlasteelFromScrapHighGrade1
-    - PlasteelFromScrapHighGrade
-    - TungstenFromScrapHighGrade1
-    - TungstenFromScrapHighGrade
-    - SteelFromScrapLowGrade1
-    - SteelFromScrapLowGrade
-    - CopperFromScrapLowGrade1
-    - CopperFromScrapLowGrade
-    - GoldFromScrapCircuit1
-    - GoldFromScrapCircuit
-    - SilverFromScrapCircuit1
-    - SilverFromScrapCircuit
-    - PlasmaFromScrapPlasma1
-    - PlasmaFromScrapPlasma
-    - PhoronFromScrapPlasma
-    - IsotopesFromScrapPlasma
-    - UraniumFromScrapUranium1
-    - UraniumFromScrapUranium
-    - FibreAlloyFromCombinedScrap
-    - BasicElectronicsFromCombinedScrap
-    - BasicMechatronicsFromCombinedScrap
-    - BallisticCyclerFromCombinedScrap
-    - HardsuitElectronicsFromCombinedScrap
+    staticPacks:
+    - C_IndustrialScrapRefinerStatic
 
 #drugs
 
@@ -136,66 +82,10 @@
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
-    staticRecipes:
-    - Crash
-    - Exile
-    - Kaiser
-    - Mechanite
-    - Bloodeye
-    - Scalpel
-    - Retractor
-    - Cautery
-    - Drill
-    - Saw
-    - Hemostat
-    - BoneGel
-    - ParamedHypo
-    - ClothingHandsGlovesNitrile
-    - ClothingMaskSterile
-    - Brutepack
-    - Ointment
-    - Gauze
-    - DisposableSyringe
-    - HandheldHealthAnalyzer
-    - BodyBag
-    - Beaker
-    - LargeBeaker
-    - Dropper
-    - Jug
-    - Syringe
-    - Defibrillator
-    dynamicRecipes:
-      - ClothingUniformJumpsuitSyndicateInterdyne
-      - ClothingBeltSyndicateWebbingInterdyne
-      - ClothingHeadHatSyndicateInterdyne
-      - ClothingOuterArmorSyndicateApron
-      - ClothingHeadHelmetSyndicateBasicInterdyne
-      - ClothingOuterArmorSyndicateArmorvestInterdyne
-      - ClothingOuterHardsuitTraumasec
-      - DefibrillatorSyndicate
-      - OmnimedToolSyndieInterdyne
-      - CyberneticsPainEditorInterdyne
-      - CyberneticsAdrenalInterdyne
-      - CyberneticsBloodPumpInterdyne
-      - InterdyneOpticsInterdyne
-      - CrowbarLeftArmInterdyne
-      - CrowbarRightArmInterdyne
-      - HypoInterdyne
-      - CartridgeEphedrineInterdyne
-      - CartridgeTirizeneInterdyne
-      - CartridgeBicaridineInterdyne
-      - CartridgeSalineInterdyne
-      - CartridgeDermalineInterdyne
-      - CartridgePuncturaseInterdyne
-      - CartridgeAtropineInterdyne
-      - SyringeCase
-      - InterdyneOptics
-      - MothroachCubeBiochemical
-      - CowCubeBiochemical
-      - GoatCubeBiochemical
-      - CryostasisBeaker
-      - SyringeCryostasis
-      - StasisBedMachineCircuitboardBiochemical
+    staticPacks:
+    - C_DrugLatheStatic
+    dynamicPacks:
+    - C_DrugLatheDynamic
   - type: Anchorable
     flags:
     - Anchorable
@@ -251,6 +141,7 @@
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
+<<<<<<< HEAD
     staticRecipes:
       - CombatKnife
       - ExplosivePayload
@@ -738,6 +629,31 @@
       - HardlinerFlatpack
       - PowerCageHardliner
 
+=======
+    staticPacks:
+    - C_MicroforgeStatic
+    dynamicPacks:
+    - C_MicroforgeDSMDynamic
+    - C_MicroforgeCDTDynamic
+    - C_MicroforgeNCWLDynamic
+    - C_MicroforgeSHIDynamic
+    - ChemistryStatic
+    - SurgeryStatic
+    - AdvancedTools
+    - ScienceEquipment
+    - ScienceClothing
+    - PowerCells
+    - ScienceWeapons
+    - Mining
+    - AtmosTools
+    - EngineeringWeapons
+    - Chemistry
+    - Janitor
+    - Instruments
+    - Equipment
+    - Parts
+    - Translator
+>>>>>>> 96d4ec70132667aa0abaecd62f8dd8a78b84dbaa
   - type: Machine
     board: MicroforgeCircuitboard
 
@@ -770,8 +686,8 @@
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
-    staticRecipes:
-    - JugBoriaticFuelCraft
+    staticPacks:
+    - C_BoriaticRefinerStatic
 
 #ship parts
 
@@ -801,10 +717,8 @@
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
-    staticRecipes:
-    - ShipHull
-    - ShipElectronics
-    - ShipEngine
+    staticPacks:
+    - C_ShipyardManufactorumStatic
   - type: Anchorable
     flags:
     - Anchorable
@@ -835,8 +749,8 @@
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
-    staticRecipes:
-    - OrganCrate
+    staticPacks:
+    - C_OrganPrinterStatic
   - type: Anchorable
     flags:
     - Anchorable
@@ -848,8 +762,8 @@
 - type: entity
   parent: BaseLathe
   id: ImperialTradeGoodPrinter
-  name: kal suzerai commodity fablathe
-  description: An automated fablathe preloaded with many commodity patterns. A merchant's best friend.
+  name: Imperial commodity fablathe
+  description: An automated fablathe preloaded with many commodity patterns. An imperial merchant's best friend.
   components:
   - type: Sprite
     sprite: _Crescent/Structures/cratefab.rsi
@@ -868,12 +782,13 @@
       - Sheet
       - Metal
       - RawMaterial
+      - CraftMaterials
+      - Ingot
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
-    staticRecipes:
-    - FabricsCrate
-    - WineCrate
+    staticPacks:
+    - C_ImperialTradeGoodsStatic
   - type: Anchorable
     flags:
     - Anchorable
@@ -883,42 +798,8 @@
 - type: entity
   parent: BaseLathe
   id: CorporateTradeGoodPrinter
-  name: shinohara commodity fablathe
-  description: An automated fablathe preloaded with many commodity patterns. A merchant's best friend.
-  components:
-  - type: Sprite
-    sprite: _Crescent/Structures/cratefab.rsi
-    layers:
-    - state: fab-idle
-      map: ["enum.LatheVisualLayers.IsRunning"]
-    - state: buttons_on
-      shader: unshaded
-      map: ["enum.PowerDeviceVisualLayers.Powered"]
-  - type: MaterialStorage
-    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
-    ignoreColor: true
-    canEjectStoredMaterials: true
-    whitelist:
-      tags:
-      - Sheet
-      - Metal
-  - type: Lathe
-    idleState: fab-idle
-    runningState: fab-active
-    staticRecipes:
-    - MiltechCrate
-    - AlloysCrate
-  - type: Anchorable
-    flags:
-    - Anchorable
-
-#saws
-
-- type: entity
-  parent: BaseLathe
-  id: SawsTradeGoodPrinter
-  name: shipfitters commodity fablathe
-  description: An automated fablathe preloaded with many commodity patterns. A merchant's best friend.
+  name: Shinohara commodity fablathe
+  description: An automated fablathe preloaded with many commodity patterns. A corporate merchant's best friend.
   components:
   - type: Sprite
     sprite: _Crescent/Structures/cratefab.rsi
@@ -937,14 +818,157 @@
       - Sheet
       - Metal
       - RawMaterial
+      - CraftMaterials
+      - Ingot
   - type: Lathe
     idleState: fab-idle
     runningState: fab-active
-    staticRecipes:
-    - PlasmaCrate
-    - ScrapCrate
-    - GunpartsCrate
-    - TitaniumScrapAlloyCrate
+    staticPacks:
+    - C_SHITradeGoodsStatic
+  - type: Anchorable
+    flags:
+    - Anchorable
+
+#saws
+
+- type: entity
+  parent: BaseLathe
+  id: SawsTradeGoodPrinter
+  name: Shipfitters commodity fablathe
+  description: An hacked fablathe preloaded with many commodity patterns. A salvager merchant's best friend.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticPacks:
+    - C_SAWTradeGoodsStatic
+  - type: Anchorable
+    flags:
+    - Anchorable
+
+#indie
+
+- type: entity
+  parent: BaseLathe
+  id: GliessTradeGoodPrinter
+  name: Gliess Santo commodity fablathe
+  description: A hacked fablathe preloaded with many commodity patterns. A independent merchant's best friend.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticPacks:
+    - C_GliessTradeGoodsStatic
+  - type: Anchorable
+    flags:
+    - Anchorable
+
+#ncwl
+
+- type: entity
+  parent: BaseLathe
+  id: UnionTradeGoodPrinter
+  name: Nova Balereska commodity fablathe
+  description: A union fablathe preloaded with many commodity patterns. A communard merchant's best friend.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticPacks:
+    - C_NCWLTradeGoodsStatic
+  - type: Anchorable
+    flags:
+    - Anchorable
+
+#ipm
+
+- type: entity
+  parent: BaseLathe
+  id: InterdyneTradeGoodPrinter
+  name: Interdyne commodity fablathe
+  description: A hacked fablathe preloaded with many commodity patterns. An organlugging merchant's best friend.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/cratefab.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: true
+    whitelist:
+      tags:
+      - Sheet
+      - Metal
+      - RawMaterial
+      - CraftMaterials
+      - Ingot
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticPacks:
+    - C_IPMTradeGoodsStatic
   - type: Anchorable
     flags:
     - Anchorable

@@ -5,13 +5,14 @@
 
 - type: entity
   id: BaseMagazineShotgun
-  name: 10-round magazine (12g shells)
-  parent: BaseItem
+  name: ammo drum (.50 shells)
+  parent: [ BaseItem, BaseRestrictedContraband ]
   abstract: true
   components:
   - type: Tag
     tags:
     - MagazineShotgun
+    - Magazine
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -37,6 +38,10 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Crescent/Weapons/Interact/mag_pick.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Crescent/Weapons/Interact/mag_drop.ogg
 
 - type: entity
   id: BaseDrumMagazineShotgun
@@ -72,12 +77,16 @@
     steps: 19
     zeroVisible: false
   - type: Appearance
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Crescent/Weapons/Interact/big_mag_pick.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Crescent/Weapons/Interact/big_mag_drop.ogg
 
 - type: entity
   id: DrumMagazineShotgunEmpty
   name: 18-round drum magazine (12g shells any)
   suffix: empty
-  parent: BaseMagazineShotgun
+  parent: BaseDrumMagazineShotgun
   components:
   - type: BallisticAmmoProvider
     proto: null
