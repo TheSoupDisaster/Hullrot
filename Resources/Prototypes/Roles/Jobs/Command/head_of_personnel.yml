@@ -62,10 +62,17 @@
     back: ClothingBackpack
     shoes: ClothingShoesLeather
     id: HoPPDA
+<<<<<<< HEAD
     ears: ClothingHeadsetHoP
   storage:
     back:
     - Flash
+=======
+    ears: ClothingHeadsetHoP # DeltaV - HoP is now a service role, replaces their all channels headset.
+    innerClothingSkirt: ClothingUniformJumpskirtHoP
+    satchel: ClothingBackpackSatchelHOPFilled
+    duffelbag: ClothingBackpackDuffelHOPFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: HoPPlasmamanGear

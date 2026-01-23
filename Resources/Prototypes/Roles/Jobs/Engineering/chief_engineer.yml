@@ -49,10 +49,17 @@
     back: ClothingBackpackEngineering
     shoes: ClothingShoesColorBrown
     id: CEPDA
+<<<<<<< HEAD
     ears: ClothingHeadsetAltEngineering
   storage:
     back:
     - Flash
+=======
+    ears: ClothingHeadsetAltEngineering # Goobstation
+    innerClothingSkirt: ClothingUniformJumpskirtChiefEngineer
+    satchel: ClothingBackpackSatchelChiefEngineerFilled
+    duffelbag: ClothingBackpackDuffelChiefEngineerFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: ChiefEngineerPlasmamanGear

@@ -29,6 +29,12 @@
     shoes: ClothingShoesColorBlack
     id: ServiceWorkerPDA
     ears: ClothingHeadsetService
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtColorDarkGreen # DeltaV
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: ServiceWorkerPlasmamanGear

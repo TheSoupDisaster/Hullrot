@@ -45,6 +45,10 @@
     id: AdminAssistantPDA
     ears: ClothingHeadsetAdminAssist
     shoes: ClothingShoesLeather
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtAdminAssistant
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: AdminAssistantPlasmamanGear

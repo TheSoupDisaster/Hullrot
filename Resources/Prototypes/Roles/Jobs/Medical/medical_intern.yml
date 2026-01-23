@@ -33,3 +33,9 @@
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     pocket2: BookMedicalReferenceBook
+<<<<<<< HEAD
+=======
+  # innerClothingSkirt: ClothingUniformJumpskirtColorWhite # DeltaV
+    satchel: ClothingBackpackSatchelMedicalFilled
+    duffelbag: ClothingBackpackDuffelMedicalFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

@@ -65,6 +65,10 @@
     shoes: ClothingShoesSlippers
     id: SyndiListeningPostPDA
     pocket1: BaseUplinkRadio20TC
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitPyjamaSyndicatePink
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 # Mobsters
 
@@ -79,6 +83,7 @@
     outerClothing: ClothingOuterArmorBasicSlim
     id: PassengerPDA
     belt: ClothingBeltHolster
+<<<<<<< HEAD
   storage:
     back:
     - BoxSurvival
@@ -86,6 +91,11 @@
     - WeaponPistolViperWood
     - MagazinePistol
     - BaseBallBat
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitSuitBlackMob
+    satchel: ClothingBackpackMafiaFilled
+    duffelbag: ClothingBackpackMafiaFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: MobsterGearAlt
@@ -99,6 +109,7 @@
     id: PassengerPDA
     belt: ClothingBeltSuspendersBlack
     pocket1: CombatKnife
+<<<<<<< HEAD
   storage:
     back:
     - BoxSurvival
@@ -106,3 +117,8 @@
     - WeaponPistolViperWood
     - MagazinePistol
     - BaseBallBat
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitSuitBrown
+    satchel: ClothingBackpackMafiaFilled
+    duffelbag: ClothingBackpackMafiaFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

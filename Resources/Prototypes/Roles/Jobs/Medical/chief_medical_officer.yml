@@ -59,10 +59,17 @@
     back: ClothingBackpackMedical
     shoes: ClothingShoesColorBrown
     id: CMOPDA
+<<<<<<< HEAD
     ears: ClothingHeadsetAltMedical
   storage:
     back:
     - Flash
+=======
+    ears: ClothingHeadsetAltMedical # Goobstation
+    innerClothingSkirt: ClothingUniformJumpskirtCMO
+    satchel: ClothingBackpackSatchelCMOFilled
+    duffelbag: ClothingBackpackDuffelCMOFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: CMOPlasmamanGear

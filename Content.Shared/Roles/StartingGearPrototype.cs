@@ -36,9 +36,12 @@ public sealed partial class StartingGearPrototype : IPrototype, IInheritingProto
     [AlwaysPushInheritance]
     public Dictionary<string, EntProtoId> Equipment = new();
 
+<<<<<<< HEAD
     /// <summary>
     /// The inhand items that are equipped when this starting gear is equipped onto an entity.
     /// </summary>
+=======
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
     [DataField]
     [AlwaysPushInheritance]
     public List<EntProtoId> Inhand = new(0);
@@ -58,9 +61,25 @@ public sealed partial class StartingGearPrototype : IPrototype, IInheritingProto
     [AlwaysPushInheritance]
     public List<CharacterRequirement> Requirements = new();
 
+<<<<<<< HEAD
     /// <summary>
     /// Gets the entity prototype ID of a slot in this starting gear.
     /// </summary>
+=======
+    [ViewVariables]
+    [IdDataField]
+    public string ID { get; private set; } = string.Empty;
+
+    /// <inheritdoc/>
+    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<StartingGearPrototype>))]
+    public string[]? Parents { get; private set; }
+
+    /// <inheritdoc/>
+    [AbstractDataField]
+    [NeverPushInheritance]
+    public bool Abstract { get; }
+
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
     public string GetGear(string slot)
     {
         return Equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;

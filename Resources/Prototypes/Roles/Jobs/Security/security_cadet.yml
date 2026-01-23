@@ -51,3 +51,9 @@
     ears: ClothingHeadsetAltSecurityRegular
     belt: ClothingBeltSecurityFilled
     pocket2: BookSecurity
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtColorRed
+    satchel: ClothingBackpackSatchelSecurity
+    duffelbag: ClothingBackpackDuffelSecurity
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

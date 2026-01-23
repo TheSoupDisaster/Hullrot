@@ -24,6 +24,10 @@
        - WeaponRifleVintorez
        - WeaponRifleTakemura
        - WeaponSubMachineGunPTAAsVal
+<<<<<<< HEAD
        - WeaponSubMachineGunPTADrozd
+=======
+       - WeaponSubMachineGunDroz
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
        - WeaponShotgunPTATwinshot
       rareChance: 0.05

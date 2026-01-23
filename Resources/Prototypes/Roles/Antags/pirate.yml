@@ -8,6 +8,12 @@
     id: PiratePDA
     belt: ClothingBeltUtility
     pocket1: AppraisalTool
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitPirate
+    satchel: ClothingBackpackPirateFilled
+    duffelbag: ClothingBackpackPirateFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: PirateCaptainGear
@@ -16,6 +22,12 @@
     head: ClothingHeadHatPirate
     pocket2: EnergyCutlass
     outerClothing: ClothingOuterCoatPirate
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtColorLightBrown
+    satchel: ClothingBackpackPirateFilled
+    duffelbag: ClothingBackpackPirateFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: PirateFirstmateGear
@@ -23,3 +35,9 @@
   equipment:
     head: ClothingHeadHatPirateTricorn
     outerClothing: ClothingOuterCoatGentle
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitPirate
+    satchel: ClothingBackpackPirateFilled
+    duffelbag: ClothingBackpackPirateFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

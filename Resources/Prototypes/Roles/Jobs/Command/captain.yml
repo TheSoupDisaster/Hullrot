@@ -47,9 +47,15 @@
     shoes: ClothingShoesBootsLaceup
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
+<<<<<<< HEAD
   storage:
     back:
     - Flash
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtCaptain
+    satchel: ClothingBackpackSatchelCaptainFilled
+    duffelbag: ClothingBackpackDuffelCaptainFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: CaptainPlasmamanGear

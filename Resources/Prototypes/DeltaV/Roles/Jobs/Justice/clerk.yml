@@ -36,4 +36,11 @@
     shoes: ClothingShoesBootsLaceup
     id: ClerkPDA
     ears: ClothingHeadsetJustice
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtClerk
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 

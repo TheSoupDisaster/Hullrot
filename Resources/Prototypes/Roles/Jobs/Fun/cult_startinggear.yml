@@ -10,9 +10,15 @@
     shoes: ClothingShoesCult
     id: PassengerPDA
     ears: ClothingHeadsetService
+<<<<<<< HEAD
   storage:
     back:
     - BoxSurvival
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtColorBlack
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: CultistGear
@@ -24,6 +30,12 @@
     shoes: ClothingShoesColorRed
     id: PassengerPDA
     ears: ClothingHeadsetService
+<<<<<<< HEAD
   storage:
     back:
     - BoxSurvival
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtColorBlack
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

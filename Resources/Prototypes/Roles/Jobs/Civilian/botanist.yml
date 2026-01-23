@@ -32,6 +32,12 @@
     ears: ClothingHeadsetService
     outerClothing: ClothingOuterApronBotanist
     belt: ClothingBeltPlantFilled
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtHydroponics
+    satchel: ClothingBackpackSatchelHydroponicsFilled
+    duffelbag: ClothingBackpackDuffelHydroponicsFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: BotanistPlasmamanGear

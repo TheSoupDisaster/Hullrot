@@ -59,10 +59,16 @@
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
     belt: ClothingBeltSecurityFilled
+<<<<<<< HEAD
   storage:
     back:
     - Flash
     - MagazinePistol
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtHoS
+    satchel: ClothingBackpackSatchelHOSFilled
+    duffelbag: ClothingBackpackDuffelHOSFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: HoSPlasmamanGear

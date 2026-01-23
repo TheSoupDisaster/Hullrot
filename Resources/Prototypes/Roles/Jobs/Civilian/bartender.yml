@@ -35,6 +35,12 @@
     shoes: ClothingShoesColorBlack
     id: BartenderPDA
     ears: ClothingHeadsetService
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtBartender
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: BartenderPlasmamanGear

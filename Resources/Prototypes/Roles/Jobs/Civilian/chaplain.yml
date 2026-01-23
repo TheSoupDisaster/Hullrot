@@ -55,6 +55,12 @@
     id: ChaplainPDA
     ears: ClothingHeadsetScience
     pocket1: BookPsionicsGuidebook
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtChaplain
+    satchel: ClothingBackpackSatchelChaplainFilled
+    duffelbag: ClothingBackpackDuffelChaplainFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: ChaplainPlasmamanGear

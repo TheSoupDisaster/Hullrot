@@ -33,6 +33,10 @@
     outerClothing: ClothingOuterArmorGladiator
     id: GladiatorPDA
     ears: ClothingHeadsetGrey
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: UniformShortsRedWithTop
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
   #any other possessions, spawn in cell
 
 - type: startingGear

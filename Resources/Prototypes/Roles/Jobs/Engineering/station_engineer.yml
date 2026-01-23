@@ -35,6 +35,12 @@
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtEngineering
+    satchel: ClothingBackpackSatchelEngineeringFilled
+    duffelbag: ClothingBackpackDuffelEngineeringFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: StationEngineerPlasmamanGear

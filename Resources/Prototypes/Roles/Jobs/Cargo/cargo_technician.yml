@@ -30,6 +30,12 @@
     id: CargoPDA
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtCargo
+    satchel: ClothingBackpackSatchelCargoFilled
+    duffelbag: ClothingBackpackDuffelCargoFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: CargoTechPlasmamanGear

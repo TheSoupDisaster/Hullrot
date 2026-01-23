@@ -42,11 +42,17 @@
     belt: ClothingBeltMedicalEMTFilled
     pocket1: HandheldGPSBasic
     pocket2: HandheldCrewMonitor
+<<<<<<< HEAD
   storage:
     back:
     - EmergencyRollerBedSpawnFolded
     - BodyBagFolded
     - Portafib
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtParamedic
+    satchel: ClothingBackpackSatchelParamedicFilledDV
+    duffelbag: ClothingBackpackDuffelParamedicFilledDV
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: ParamedicPlasmamanGear

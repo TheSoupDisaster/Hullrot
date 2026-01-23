@@ -28,6 +28,12 @@
     gloves: ClothingHandsGlovesJanitor
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtJanitor
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: JanitorPlasmamanGear
@@ -49,6 +55,12 @@
     head: ClothingHeadHatCatEars
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
+<<<<<<< HEAD
   storage:
     back:
     - BoxSurvival
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtJanimaid
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06

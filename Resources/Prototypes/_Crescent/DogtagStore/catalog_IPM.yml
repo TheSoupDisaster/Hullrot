@@ -226,7 +226,11 @@
   name: NCSP SR-2MP Atreides 9x19mm
   description: A 9x19mm Atreides SMG, produced by the Taypani Free Stations Coalition.
   icon: { sprite: _Crescent/Objects/Weapons/Guns/atreides.rsi, state: icon }
+<<<<<<< HEAD
   productEntity: WeaponSubMachineGunNCSPAtreides
+=======
+  productEntity: WeaponSubMachineGunAtreidesHullrot
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
   cost:
     SampleIPM: 5
   categories:

@@ -373,7 +373,11 @@
   name: NCSP Atreides 9x19mm
   description: An otherwise finely crafted submachine gun heavily limited by its caliber.
   icon: { sprite: /Textures/_Crescent/Objects/Weapons/Guns/atreides.rsi, state: icon }
+<<<<<<< HEAD
   productEntity: WeaponSubMachineGunNCSPAtreides
+=======
+  productEntity: WeaponSubMachineGunAtreidesHullrot
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
   cost:
     PlunderGSC: 2
   categories:

@@ -55,9 +55,15 @@
     ears: ClothingHeadsetAltCargo
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
+<<<<<<< HEAD
   storage:
     back:
     - Flash
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtQM
+    satchel: ClothingBackpackSatchelQuartermasterFilled
+    duffelbag: ClothingBackpackDuffelQuartermasterFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: QuartermasterPlasmamanGear

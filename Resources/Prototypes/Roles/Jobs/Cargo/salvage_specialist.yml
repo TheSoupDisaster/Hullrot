@@ -32,6 +32,11 @@
     id: SalvagePDA
     ears: ClothingHeadsetCargo
     pocket1: MiningVoucher
+<<<<<<< HEAD
+=======
+    satchel: ClothingBackpackSatchelSalvageFilled
+    uffelbag: ClothingBackpackDuffelSalvageFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: SalvageSpecialistPlasmamanGear

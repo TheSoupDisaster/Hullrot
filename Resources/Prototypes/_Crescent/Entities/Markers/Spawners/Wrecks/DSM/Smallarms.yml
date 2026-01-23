@@ -16,8 +16,13 @@
        - WeaponRevolverArgentiSecurity
        - WeaponRifleDSMMuster
        - DSMG4TwistcapHandgrenade
+<<<<<<< HEAD
        - WeaponSubMachineGunDSMArbiter
        - WeaponSubMachineGunDSMTalon
+=======
+       - WeaponSubMachineGunDSMArbiterHullrot
+       - WeaponSubMachineGunC20rHullrot
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
       chance: 0.20
       rarePrototypes: #powerful or decent things that will keep salvagers mining for dopamine
       - WeaponSniperDSMLegax

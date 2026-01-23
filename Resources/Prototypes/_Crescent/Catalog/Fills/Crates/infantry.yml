@@ -129,7 +129,11 @@
   components:
   - type: StorageFill
     contents:
+<<<<<<< HEAD
       - id: WeaponSubMachineGunPTADrozd
+=======
+      - id: WeaponSubMachineGunDroz
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
         amount: 1
       - id: MagazineMagnumSub
         amount: 2

@@ -41,6 +41,10 @@
     shoes: ClothingShoesColorBlack
     id: PrisonerPDA
     ears: ClothingHeadsetPrison #deltaV
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitPrisoner
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: PrisonerPlasmamanGear

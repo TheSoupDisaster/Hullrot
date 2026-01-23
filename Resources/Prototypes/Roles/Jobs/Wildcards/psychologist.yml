@@ -28,9 +28,15 @@
     shoes: ClothingShoesLeather
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
+<<<<<<< HEAD
   storage:
     back:
     - RubberStampPsychologist
+=======
+    innerClothingSkirt: ClothingUniformJumpsuitPsychologist
+    satchel: ClothingBackpackSatchelPsychologistFilled #DeltaV - stamp included
+    duffelbag: ClothingBackpackDuffelPsychologistFilled #DeltaV - stamp included
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: PsychologistPlasmamanGear

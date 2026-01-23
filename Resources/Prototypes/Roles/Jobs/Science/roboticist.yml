@@ -26,6 +26,12 @@
     id: RoboticsPDA
     ears: ClothingHeadsetRobotics
     pocket1: BookPsionicsGuidebook
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformJumpskirtRoboticist
+    satchel: ClothingBackpackSatchelRoboticsFilled
+    duffelbag: ClothingBackpackDuffelRoboticsFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: RoboticistPlasmamanGear

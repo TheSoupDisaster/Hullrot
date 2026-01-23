@@ -23,6 +23,12 @@
     id: MailCarrierPDA
     ears: ClothingHeadsetCargo
     belt: MailBag
+<<<<<<< HEAD
+=======
+    innerClothingSkirt: ClothingUniformSkirtMailCarrier
+    satchel: ClothingBackpackSatchelFilled
+    duffelbag: ClothingBackpackDuffelFilled
+>>>>>>> 9ab8822c4f9158ac83aa446d592e48410d646f06
 
 - type: startingGear
   id: MailCarrierPlasmamanGear
