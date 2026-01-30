@@ -203,6 +203,7 @@
   - type: Lathe
     idleState: icon
     runningState: building
+<<<<<<< HEAD
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
@@ -226,6 +227,111 @@
     - Parts
     - Translator
     # EE EDIT END
+=======
+    staticRecipes:
+    - LargeBeaker
+    - Dropper
+    - ClothingEyesGlassesChemical
+    - N14MaterialCircuitry
+    dynamicRecipes:
+    - PowerDrill
+    - MiningDrill
+    - MiningDrillDiamond
+    - AnomalyScanner
+    - AnomalyLocator
+    - AnomalyLocatorWide
+    - HandheldCrewMonitor
+    - Scalpel
+    - Retractor
+    - Cautery
+    - Drill
+    - WeaponParticleDecelerator
+    - HoloprojectorField
+    - Saw
+    - Hemostat
+    - CryostasisBeaker
+    - SyringeCryostasis
+    - Syringe
+    - DisposableSyringe
+    - Implanter
+    - PillCanister
+    - ChemistryEmptyBottle01
+    - AdvancedCapacitorStockPart
+    - AdvancedMatterBinStockPart
+    - NanoManipulatorStockPart
+    - SuperCapacitorStockPart
+    - SuperMatterBinStockPart
+    - PicoManipulatorStockPart
+    - BluespaceCapacitorStockPart
+    - BluespaceManipulatorStockPart
+    - BluespaceMatterBinStockPart
+    - AdvMopItem
+    - WeaponSprayNozzle
+    - ClothingBackpackWaterTank
+    - MegaSprayBottle
+    - TimerTrigger
+    - ChemicalPayload
+    - FlashPayload
+    - Signaller
+    - SignallerAdvanced
+    - SignalTrigger
+    - VoiceTrigger
+    - Igniter
+    - HandHeldMassScannerEE
+    - PowerCellMicrortg
+    - PowerCellMicroreactor
+    - PowerCellHigh
+    - WeaponPistolCHIMP
+    - ClothingMaskWeldingGas
+    - WeaponGauntletGorilla
+    - SynthesizerInstrument
+    - RPED
+    - ClothingShoesBootsMag
+    - ClothingShoesBootsMoon
+    - ClothingShoesBootsMagAdv
+    - NodeScanner
+    - HolofanProjector
+    - BluespaceBeaker
+    - SyringeBluespace
+  #  - WeaponForceGun
+    - WeaponLaserSvalinn
+    - WeaponCivilianDisabler
+    - WeaponProtoKineticAccelerator
+  #  - WeaponTetherGun
+  #  - WeaponGrapplingGun
+    - ClothingBackpackHolding
+    - ClothingBackpackSatchelHolding
+    - ClothingBackpackDuffelHolding
+    - WelderExperimental
+    - JawsOfLife
+    - CoreSilver # Nyanotrasen - Silver Golem core
+    - OreBagOfHolding
+    - DeviceQuantumSpinInverter
+    - PKAUpgradeDamage # Lavaland Change
+    - PKAUpgradeRange # Lavaland Change
+    - PKAUpgradeFireRate # Lavaland Change
+    - XenoTranslator
+    - AdvancedGalaticCommonTranslatorImplanter
+    - BubblishTranslatorImplanter
+    - NekomimeticTranslatorImplanter
+    - DraconicTranslatorImplanter
+    - CanilunztTranslatorImplanter
+    - SolCommonTranslatorImplanter
+    - RootSpeakTranslatorImplanter
+    - AnimalTranslator
+    - MofficTranslatorImplanter
+    - ClothingEyesNightVisionGoggles
+    - ClothingEyesNightVisionDiagnosticGoggles
+    - ClothingEyesThermalVisionGoggles
+    - RCDAmmo #DeltaV
+    - RCD #EE
+    - RPD
+    # Shitmed Change
+    - EnergyScalpel
+    - EnergyCautery
+    - AdvancedRetractor
+    - VehicleWheelchairFolded # Goobstation
+>>>>>>> 005a351450f08b090e30ebdd12c94288315703c0
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo

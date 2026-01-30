@@ -7,10 +7,31 @@
   - type: ShipyardListing
     shuttles:
     - Vanguard
-    - Zorniy
     - Lodka
-    - Cherenzikov
     - Ivarod
+    - Sunder
+    - Stern
+    - Gargut
+    - Hind
+    - Vasinya
+
+- type: entity
+  id: NCWLLightCarrierComputer
+  parent: BaseMothershipComputer
+  name: homeguard light carrier fab console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - HornetDrone
+
+- type: entity
+  id: DSMLightCarrierComputer
+  parent: BaseMothershipComputer
+  name: imperial garrison light carrier fab console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - ValorDrone
 
 - type: entity
   id: JackalMothershipComputer
@@ -39,8 +60,9 @@
     - Gnosis
     - Praxis
     - Imparator
-    - Praetorian
     - Laelaps
+    - Dragoon
+    - Suzerain
 
 - type: entity
   id: NemesisMothershipComputer
@@ -109,6 +131,7 @@
     - Bison
     - Nazaar
     - colossus
+    - Chanchu
 
 - type: entity
   id: RamziMothershipComputer
@@ -161,10 +184,12 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - Provost
+    - Respondant
     - Adjudicator
-    - Warden
-    - Jury
+    - Sentry
+    - Minuteman #instead of guard for now
+    - Sentinel
+    #- Guard --uncomment when we get an UL
 
 - type: entity
   id: RefugeMothershipComputer
@@ -220,6 +245,7 @@
   - type: ShipyardListing
     shuttles:
     - Lucifer
+    - Fadeem
 
 - type: entity
   id: OuroborosMothershipComputer
@@ -262,3 +288,12 @@
     shuttles:
     - Roachling
     - Dungbeetle
+
+- type: entity
+  id: FadeemMothershipComputer
+  parent: BaseMothershipComputer
+  name: fadeem internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Caravan

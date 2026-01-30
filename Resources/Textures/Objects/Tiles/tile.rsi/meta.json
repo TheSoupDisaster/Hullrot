@@ -548,6 +548,7 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "wood-large"
     },
     {
@@ -560,6 +561,12 @@
     {
       "name": "asteroid-inhand-left",
       "directions": 4
+=======
+        "name": "wood-large"
+    },
+    {
+        "name": "tapcarpet"
+>>>>>>> 005a351450f08b090e30ebdd12c94288315703c0
     }
   ]
 }

@@ -874,6 +874,41 @@
   - type: Icon
     sprite: Structures/Walls/shuttle.rsi
     state: full
+<<<<<<< HEAD
+=======
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 600
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalSlam
+      - trigger:
+          !type:DamageTrigger
+          damage: 400
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalSlam
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:ChangeConstructionNodeBehavior
+          node: girder
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SteelScrap1:
+              min: 2
+              max: 4
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+>>>>>>> 005a351450f08b090e30ebdd12c94288315703c0
   - type: Construction
     graph: Girder
     node: shuttleWall

@@ -25,6 +25,7 @@
   name: jetpack
   description: It's a jetpack. It can hold 5 L of gas.
   components:
+<<<<<<< HEAD
   - type: InputMover
     toParent: true
   - type: MovementSpeedModifier
@@ -65,6 +66,49 @@
     difficulty: 3
     recipes:
     - JetpackBlue
+=======
+    - type: InputMover
+      toParent: true
+    - type: MovementSpeedModifier
+      weightlessAcceleration: 0.1
+      weightlessFriction: 0.2
+      weightlessModifier: 7
+    - type: CanMoveInAir
+    - type: Sprite
+      sprite: Objects/Tanks/Jetpacks/blue.rsi
+      state: icon
+    - type: Item
+      sprite: Objects/Tanks/Jetpacks/blue.rsi
+      size: Huge
+    - type: UserInterface
+      interfaces:
+        enum.SharedGasTankUiKey.Key:
+          type: GasTankBoundUserInterface
+    - type: Clothing
+      sprite: Objects/Tanks/Jetpacks/blue.rsi
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+    - type: GasTank
+      outputPressure: 21.3
+      air:
+        volume: 5
+        temperature: 293.15
+    - type: Jetpack
+      moleUsage: 0.00085
+    - type: Appearance
+    - type: HullJetpack
+    - type: StaticPrice
+      price: 100
+#    - type: DynamicPrice
+#      price: 100
+    - type: ReverseEngineering # Nyano
+      generic: true
+      difficulty: 3
+      recipes:
+        - JetpackBlue
+>>>>>>> 005a351450f08b090e30ebdd12c94288315703c0
 
 - type: entity
   id: ActionToggleJetpack
